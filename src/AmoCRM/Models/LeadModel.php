@@ -31,6 +31,7 @@ class LeadModel extends BaseApiModel implements TypeAwareInterface, CanBeLinkedI
     public const LOSS_REASON = 'loss_reason';
     public const SOURCE_ID = 'source_id';
     public const CONTACTS = 'contacts';
+    public const ONLY_DELETES = 'only_deleted';
 
     /**
      * @var int
@@ -980,6 +981,7 @@ class LeadModel extends BaseApiModel implements TypeAwareInterface, CanBeLinkedI
             self::CONTACTS,
             self::SOURCE_ID,
             self::LOSS_REASON,
+            self::ONLY_DELETES
         ];
     }
 
